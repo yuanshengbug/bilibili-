@@ -1,0 +1,84 @@
+page{
+  color: #666;
+}
+/* 首页导航 */
+.nav_wrap{}
+.nav{
+  /* 规定段落中的文本不进行换行： */
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav_item{
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.nav_item.active{
+  border-bottom: 5rpx solid #de688b;
+}
+/* 轮播图 */
+.slides{
+  margin-top: 5rpx;
+}
+.slides swiper{
+  height: 300rpx;
+}
+.slides navigator{
+  width: 100%;
+  height: 100%;
+}
+.slides image{
+  width: 100%;
+  height: 100%;
+}
+/* 视频列表 */
+.video_wrap{
+  display: flex;
+  /* 是否拆行或拆列 */
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-between;
+}
+.video_item{
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+.video_img{
+  position: relative;
+}
+.video_img image{
+  width: 100%;
+  border-radius: 15rpx;
+}
+.video_img .video_info{
+  position: absolute;
+  bottom: 10rpx;
+  /* left: -28rpx; */
+  /* right: -20rpx; */
+  padding: 10rpx;
+  width: 100%;
+  display: flex;
+  /* 项目位于各行之间留有空白的容器内 */
+  justify-content: space-between;
+  color: #fff;
+  font-size: 24rpx;
+}
+.video_title{
+  font-size: 28rpx;
+  /* 自适应布局 */
+  display: -webkit-box;
+  /* 属性指定如果它溢出了元素的内容区是否剪辑左/右边缘内容。 */
+  /* hidden 裁剪内容 - 不提供滚动机制。 */
+  overflow:hidden;
+  /* 规定段落中的文本不进行换行 */
+  white-space: normal;
+  /* 溢出的部分ellipsis用省略号来显示  */
+  text-overflow: ellipsis;
+  /* 允许长的文本进行换行 */
+  word-wrap: break-word;
+  /* 多行文字溢出  */
+    -webkit-line-clamp:2;
+    /*box-orient 属性指定一个box子元素是否应按水平或垂直排列 */
+  -webkit-box-orient: vertical;
+
+}

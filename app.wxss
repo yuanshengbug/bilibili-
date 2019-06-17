@@ -1,0 +1,6 @@
+/* 导入字体标 */
+@import "styles/fontawesome.wxss";
+/* 初始化 */
+page,view,image,swiper,swiper-item,navigator,video{
+  box-sizing: border-box;
+}
